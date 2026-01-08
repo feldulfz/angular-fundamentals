@@ -1,5 +1,7 @@
 <p>home works!</p>
 <app-greeting [message]="homeMessage()"/>
 <app-counter />
-<input type="text" (keyup)="keyUpHandler()">
-<input type="text" (keyup)="keyUpHandler1($event)">
+<div style="display: flex; flex-direction: column; width: 200px;">
+    <input type="text" placeholder="Nornal typing detection" (keyup)="keyUpHandler()">
+    <input type="text" placeholder="Keyboard key typing detection" (keyup)="keyUpHandler1($event)">
+</div>

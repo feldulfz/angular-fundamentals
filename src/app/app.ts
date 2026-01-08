@@ -5,11 +5,11 @@ import { Header } from './components/header/header';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Home, Header],
+  imports: [RouterOutlet, Header],
   template: `
-    <app-header></app-header>
+    <app-header />
     <main>
-      <app-home></app-home>
+      <router-outlet />
     </main>
   `,
   styles: [
